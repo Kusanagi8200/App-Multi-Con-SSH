@@ -8,10 +8,10 @@ SERVER_KEYS[2]="Samba-AD"
 SERVER_KEYS[3]="Yunohost"
 SERVER_KEYS[4]="Freelab.fun"
 
-SERVERS["Stack-API"]="root@IP  "
-SERVERS["Samba-AD"]="root@IP   "
-SERVERS["Yunohost"]="root@IP   "
-SERVERS["Freelab.fun"]="root@IP  "
+SERVERS["Stack-API"]="root@192.168.201.132  "
+SERVERS["Samba-AD"]="root@192.168.201.141   "
+SERVERS["Yunohost"]="root@192.168.201.146   "
+SERVERS["Freelab.fun"]="root@91.234.194.49  "
 
 function add_new_connection {
     read -p $'\e[34mName of the new connection:\e[0m ' new_name
