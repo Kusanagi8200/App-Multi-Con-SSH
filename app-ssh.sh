@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATA_FILE="data.sh"
+DATA_FILE="/home/elijah/Documents/git-script/App-ssh/data.sh"
 
 declare -A SERVERS
 declare -a SERVER_KEYS
