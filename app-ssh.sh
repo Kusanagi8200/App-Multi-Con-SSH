@@ -21,8 +21,8 @@ function save_data {
 }
 
 function add_new_connection {
-    read -p $'\e[34mName of the new connection :\e[0m ' new_name
-    read -p $'\e[34mAddress of the new connection (user@ip) :\e[0m ' new_address
+    read -p $'\e[1m\e[34mName of the new connection :\e[0m ' new_name
+    read -p $'\e[1m\e[34mAddress of the new connection (user@ip) :\e[0m ' new_address
     
     # Update the arrays with the new connection
     idx=${#SERVER_KEYS[@]}+1
@@ -40,7 +40,7 @@ function delete_connection {
         key="${SERVER_KEYS[$idx]}"
         echo "$idx) $key: ${SERVERS[$key]}"
     done
-    read -p $'\e[31mEnter the number of the connection you want to delete :\e[0m ' del_choice
+    read -p $'\e[1m\e[31mEnter the number of the connection you want to delete :\e[0m ' del_choice
 
     if [ -n "${SERVER_KEYS[$del_choice]}" ]; then
         unset SERVERS["${SERVER_KEYS[$del_choice]}"]
@@ -53,24 +53,24 @@ function delete_connection {
 }
 
 function show_menu {
-    echo -e "\e[30;43m__________SSH CONNECTIONS___________\e[0m"
+    echo -e "\e[1m\e[97;44m__________SSH CONNECTIONS___________\e[0m"
     echo #
     for idx in "${!SERVER_KEYS[@]}"; do
         key="${SERVER_KEYS[$idx]}"
         echo -e "\e[97;45m$idx) $key : ${SERVERS[$key]}\e[0m"
         echo #
     done
-    echo -e "\e[30;43m0) EXIT_____________________________\e[0m"
+    echo -e "\e[1m\e[30;43m0) EXIT_____________________________\e[0m"
     echo # 
-    echo -e "\e[30;43m+) ADD A NEW CONNECTION_____________\e[0m"
+    echo -e "\e[1m\e[30;42m+) ADD A NEW CONNECTION_____________\e[0m"
     echo #
-    echo -e "\e[30;43m-) DELETE A CONNECTION______________\e[0m"
+    echo -e "\e[1m\e[30;42m-) DELETE A CONNECTION______________\e[0m"
     echo #
 }
 
 while true; do
     show_menu
-    read -p $'\e[30;43m______________________SELECTION = \e[0m ' choice
+    read -p $'\e[1m\e[30;44m______________________SELECTION = \e[0m ' choice
     
     if [ "$choice" == "0" ]; then
         exit 0
