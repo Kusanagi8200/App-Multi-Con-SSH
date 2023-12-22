@@ -10,7 +10,7 @@ This Bash script provides a user-friendly interface for managing SSH connections
 
 ## How It Works
 
-- The script stores the SSH connection details in `data.sh` located at `/home/elijah/Documents/git-script/App-ssh/`.
+- The script stores the SSH connection details in `data.sh` located at `/Path/To/File/data.sh`.
 - It uses associative arrays (`SERVERS`) and indexed arrays (`SERVER_KEYS`) to manage the connections.
 - A menu-driven interface is provided for interaction.
 
