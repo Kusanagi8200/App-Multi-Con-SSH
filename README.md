@@ -18,7 +18,7 @@ This Bash script provides a user-friendly interface for managing SSH connections
 
 - Bash shell environment.
 - SSH client installed on your system.
-- `data.sh` file should exist in the specified path or will be created on adding the first connection.
+- `data.sh` empty file should exist in the specified path or will be created on adding the first connection.
 
 ## Usage
 
