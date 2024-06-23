@@ -24,8 +24,8 @@
 ## Usage
 
 1. **Starting the Script**:
-   ./app-ssh.sh
+-  ./app-ssh.sh
 
 2.**Bash Alias**
-    alias something='/Path/To/Repo/App-Multi-Con-SSH/app-ssh.sh'
+-  alias something='/Path/To/Repo/App-Multi-Con-SSH/app-ssh.sh'
 
