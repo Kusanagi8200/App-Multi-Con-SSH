@@ -1,6 +1,7 @@
 # SSH Connection Manager Script
 
-This Bash script provides a user-friendly interface for managing SSH connections. It allows users to add, delete, and connect to SSH servers by maintaining a list of server details.
+- This Bash script provides a user-friendly interface for managing SSH connections. 
+- It allows users to add, delete, and connect to SSH servers by maintaining a list of server details.
 
 ## Features
 
