@@ -24,7 +24,8 @@
 ## Usage
 
 1. **Starting the Script**:
-   Run the script using the Bash interpreter:
-   ```bash
-   bash script_name.sh
+   ./app-ssh.sh
+
+2.**Bash Alias**
+    alias something='/Path/To/Repo/App-Multi-Con-SSH/app-ssh.sh'
 
